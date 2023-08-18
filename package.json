@@ -4,7 +4,9 @@
   "description": "...",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
@@ -22,7 +24,8 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",
-    "jest": "^29.6.2"
+    "jest": "^29.6.2",
+    "prettier": "^3.0.2"
   },
   "peerDependencies": {
     "react": "^18.2.0",
