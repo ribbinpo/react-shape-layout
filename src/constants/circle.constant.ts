@@ -1,0 +1,1 @@
+export const DEGREE_CIRCLE = 360;
