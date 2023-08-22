@@ -1,9 +1,9 @@
 import React from 'react';
 
 import styles from './CircleLayout.module.css';
-import { DEGREE_CIRCLE } from 'constants/circle.constant';
-import { findCoordinate } from 'utils/circle.util';
-import { degreeToRadian } from 'utils/angle.util';
+import { DEGREE_CIRCLE } from '../../constants/circle.constant';
+import { findCoordinate } from '../../utils/circle.util';
+import { degreeToRadian } from '../../utils/angle.util';
 
 export interface ICircleLayout {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ export interface ICircleLayout {
 }
 
 export const CircleLayout: React.FC<ICircleLayout> = (props) => {
-  const { children, radius, animation = true, delay = 10 } = props;
+  const { children, radius, animation = false, delay = 10 } = props;
 
   const childCount = React.Children.count(children);
 
