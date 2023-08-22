@@ -1,6 +1,6 @@
 {
   "name": "react-shape-layout",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "...",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -9,7 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf ./dist && npx rollup -c --bundleConfigAsCjs"
+    "build": "rm -rf ./dist && npx rollup -c --bundleConfigAsCjs",
+    "semantic-release": "semantic-release --branches main"
   },
   "author": "...",
   "license": "MIT",
@@ -31,7 +32,8 @@
     "rollup": "^3.28.0",
     "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.35.0"
+    "rollup-plugin-typescript2": "^0.35.0",
+    "semantic-release": "^21.0.9"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -39,5 +41,9 @@
   },
   "engines": {
     "node": ">=16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ribbinpo/react-shape-layout.git"
   }
 }
