@@ -1,7 +1,7 @@
 {
   "name": "react-shape-layout",
   "version": "1.0.0",
-  "description": "...",
+  "description": "A versatile React library simplifying component arrangement in circles and various shapes for stunning UI designs.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -13,7 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "author": "...",
+  "author": "ribbinpo",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^20.5.0",
