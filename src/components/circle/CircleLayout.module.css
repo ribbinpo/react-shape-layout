@@ -1,0 +1,32 @@
+.layout {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  animation: rotateAnimation var(--delay) linear infinite;
+}
+
+.child {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: reverseRotateAnimation var(--delay) linear infinite;
+  left: var(--x);
+  top: var(--y);
+}
+
+@keyframes reverseRotateAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
