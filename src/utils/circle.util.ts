@@ -7,5 +7,5 @@
 export const findCoordinate = (radius: number, radian: number): [x: number, y: number] => {
   const x = radius * Math.cos(radian);
   const y = radius * Math.sin(radian);
-  return [x, y];
+  return [+x.toFixed(2), +y.toFixed(2)];
 }
