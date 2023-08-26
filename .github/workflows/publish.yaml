@@ -13,9 +13,9 @@ jobs:
         node-version: [16.x, 17.x, 18.x]
         os: [ubuntu-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
@@ -23,15 +23,12 @@ jobs:
       - run: npm test
   publish:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x, 17.x, 18.x]
     if: ${{ github.ref == 'refs/head/main' }}
     needs: [build]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
