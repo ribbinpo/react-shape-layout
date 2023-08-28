@@ -53,9 +53,9 @@ import 'react-shape-layout/dist/cjs/index.css';
 const MyCircularComponent = () => {
   return (
     <CircleLayout radius={150}>
-      <div className="circle-item">Item 1</div>
-      <div className="circle-item">Item 2</div>
-      <div className="circle-item">Item 3</div>
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
     </CircleLayout>
   );
 };
